@@ -1,36 +1,49 @@
-from menuPrincipal import *
+import json
+
+##  Abrir
+def abrirCamperJSON():
+    Abrir = {}
+    with open("./BaseDatosCampus.json" , "r") as openFile :
+        Abrir = json.load (openFile)
+    return Abrir
+    
+## Guardar
+
+def guardarCamperJSON(lool):
+    with open ("./BaseDatosCampus.json" , "w") as outFile :
+        json.dump (lool , outFile, indent=4 , ensure_ascii=False)
 
 
-def MenuTrainer ():
+def MenuTrainer():
         print ("#####################################")
         print("##¿Que quieres hacer como Trainer ? ###")
         print ("#####################################")
         print("1- Ver grupo")
         print("2- Asignar notas")
     
-def MenuCamper ():
+def MenuCamper():
         print ("#####################################")
         print("##¿Que quieres hacer como Camper ? ##")
         print ("#####################################")
         print("1- ver Notas")
         print("2- ver cursos")
 
-
-def MenuCoordinador ():
+def MenuCoordinador():
         print ("#####################################")
         print("##¿Que quieres hacer como Coordinador ? ##")
         print ("##########################################")
         print("1- Ver grupos")
         print("2- Ingresar nuevo camper")
         print("3- Ingresar nuevo trainer")
+        opc = int(input(": "))
+        if opc == 2 :
+                IngresarCamper()
 
 
 
 
-opc = input(": ")
-if opc == 1 :
-                print("a")
-elif opc == 2 : 
+
+def IngresarCamper(): 
         
                 abrir = abrirCamperJSON()
 
@@ -45,13 +58,26 @@ elif opc == 2 :
                 direccion = input("~~~: ")
                 
                 print("Ingrese el numero del camper")
-                telefonoCamper = input ("~~~: ")
+                telefonoCamper = int(input ("~~~: "))
 
                 print("Ingrese el nombre del acudiente del camper")
                 nombreAcu = input("~~~: ")
 
-                print("Ingrese el numero del acudiente del camper")
-                telefonoAcu = input("~~~: ")
+                abrir["campers"].append ({     "identificacion" : nuevaidentificacion ,
+                                               "nombres": nombre ,
+                                               "apellidos": apellido ,
+                                               "direccion": direccion ,
+                                               "telefonos": telefonoCamper ,
+                                               "acudiente": nombreAcu ,
+                                             "estado del estudiante": 
+                                             {
+                                                "estado" : "Inscrito",
+                                               "riesgo" : "Bajo"
+                                               }
+                                               })
+                
+                guardarCamperJSON(abrir)
+                                               
                 
                 
                 
