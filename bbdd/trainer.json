@@ -1,0 +1,19 @@
+{
+    "trainers": [{
+
+        "nombres": "Pedro",
+        "Ruta": "Java"
+      },
+      {
+
+        "nombres": "Carlos",
+        "Ruta": "Java"
+      },
+      {
+        
+        "nombres": "Juan",
+        "Ruta": "Java"
+        
+      }
+    ]
+  }
