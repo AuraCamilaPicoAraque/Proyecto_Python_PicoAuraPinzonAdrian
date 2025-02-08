@@ -16,8 +16,8 @@ def guardarCamperJSON (lool):
         json.dump (lool , outFile)
 
 
+abrir = {}
 
-menu = {}
 bo=True
 while bo==True:
       
@@ -33,16 +33,16 @@ while bo==True:
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-                MenuTrainer()
+                MenuTrainer ()
         elif opcion == "2":
-                MenuCamper()
+                MenuCamper ()
         elif opcion == "3":
-                MenuCoordinador()
+                MenuCoordinador ()
         elif opcion == "4":
-            print(" Saliendo del sistema...")
+            print(" Saliendo del sistema ~~~")
             break
         else:
-            print(" pción no válida, intente de nuevo.")
+            print(" opción no válida, intente de nuevo.")
 
     
 

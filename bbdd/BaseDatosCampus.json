@@ -1,0 +1,299 @@
+{
+
+"Jornadas: " : [
+        {
+
+        "Mañana" : "1" , 
+        "Tarde" : "2" ,
+        "Jornada Completa" : "3"
+
+    }], 
+
+
+    
+    
+    
+    
+"trainers": [{
+
+        "nombres": "Pedro",
+        "Ruta": "Java" ,
+        "Jornada del trainer: " : "3"
+        
+      },
+      {
+
+        "nombres": "Jolver",
+        "Ruta": "Java" ,
+        "Jornada del trainer: " : "3"
+
+      },
+      {
+        
+        "nombres": "Miguel",
+        "Ruta": "Java" ,
+        "Jornada del trainer: " : "3"
+        
+      },
+      {
+        "nombres": "Juan Carlos",
+        "Ruta": "Java" ,
+        "Jornada del trainer: " : "1"
+      },
+
+      {
+        "nombres": "Carlos Rueda",
+        "Ruta": "Java" ,
+        "Jornada del trainer: " : "2"
+      }
+    ],
+
+
+
+
+    "Rutas" : {
+        "Ruta Java" : [
+        "Intro" ,
+        "Python" ,
+        "HTML/CSS" ,
+        "Scrum" ,
+        "Git" ,
+        "JavaScript" ,
+        "Intro Back" ,
+        "Intro BBDD" ,
+        "MySQL" ,
+        "Java" ,
+        "PostgreSQL" ,
+        "SpringBoot" 
+    ],
+
+    "Ruta NodeJS" : [ 
+
+        " Intro" ,
+        " Python" ,
+        " HTML/CSS",
+        " Scrum",
+        " Git",
+        " JavaScript",
+        " Intro Back",
+        " Intro BBDD",
+        " MongoDB",
+        " JavaScript",
+        " MySQL",
+        " Express"
+
+        ],
+
+
+    "Ruta .NET" :[ 
+        " Intro",
+        " Python",
+        " HTML/CSS",
+        " Scrum",
+        " Git",
+        " JavaScript",
+        " Intro Back",
+        " Intro BBDD",
+        " MySQL",
+        " C#",
+        " PostgreSQL",
+        " .Net Core"
+    ],
+
+    "Ruta Python": [
+        "Intro",
+        "Python",
+        "HTML/CSS",
+        "Scrum",
+        "Git",
+        "JavaScript",
+        "Intro Back",
+        "Intro BBDD",
+        "MySQL",
+        "Django",
+        "Flask",
+        "FastAPI"
+    ],
+
+    "Ruta C++": [
+        "Intro",
+        "Python",
+        "HTML/CSS",
+        "Scrum",
+        "Git",
+        "C++",
+        "Estructuras de Datos",
+        "Algoritmos",
+        "Patrones de Diseño",
+        "Bases de Datos",
+        "QT Framework"
+    ],
+
+    "Ruta DevOps": [
+        "Intro",
+        "Python",
+        "Git",
+        "Scrum",
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "AWS",
+        "Terraform",
+        "CI/CD",
+        "Networking",
+        "Monitorización"
+    ]
+
+    },
+
+
+
+
+
+    "coordinadora" :{
+
+    "nombre" : "Karen" , 
+    "usuario" : "karencitatodapoderosa" ,
+    "contraseña" : "contraseña" } ,
+
+
+
+
+
+
+    "campers":[{
+
+
+        "identificacion": 1,
+        "nombres": "Juan Carlos",
+        "apellidos": "Gómez Pérez",
+        "direccion": "Calle 45 #23-10, Bogotá",
+        "acudiente": "María Pérez",
+        "telefonos": {"celular": "3001234567"},
+
+        "estado del estudiante" : {
+        "estado": "Inscrito",
+        "riesgo": "Bajo"
+        }
+    },
+    {
+        "identificacion": 2,
+        "nombres": "Ana Sofía",
+        "apellidos": "Martínez López",
+        "direccion": "Carrera 12 #45-32, Medellín",
+        "acudiente": "Carlos Martínez",
+        "telefonos": {"celular": "3107654321"},
+
+        "estado del estudiante" : {
+        "estado": "Cursando",
+        "riesgo": "Medio"
+        }
+    },
+    {
+        "identificacion": 3,
+        "nombres": "Luis Fernando",
+        "apellidos": "Ramírez Torres",
+        "direccion": "Av. 68 #50-20, Cali",
+        "acudiente": "Andrea Torres",
+        "telefonos": {"celular": "3209987654"},
+
+        "estado del estudiante" : {
+        "estado": "Aprobado",
+        "riesgo": "Bajo"
+        }
+    },
+    {
+        "identificacion": 4,
+        "nombres": "Gabriela Estefanía",
+        "apellidos": "Rodríguez Vargas",
+        "direccion": "Calle 12 #33-45, Barranquilla",
+        "acudiente": "Miguel Rodríguez",
+        "telefonos": {"celular": "3157890123"},
+
+        "estado del estudiante" : {
+        "estado": "En proceso de ingreso",
+        "riesgo": "Alto"
+        }
+    },
+    {
+        "identificacion": 5,
+        "nombres": "Daniel Andrés",
+        "apellidos": "Fernández Castro",
+        "direccion": "Carrera 8 #90-10, Cartagena",
+        "acudiente": "Patricia Castro",
+        "telefonos": {"celular": "3184567890"},
+
+        "estado del estudiante" : {
+        "estado": "Graduado",
+        "riesgo": "Bajo"
+        }
+    },
+    {
+        "identificacion": 6,
+        "nombres": "Mariana Alejandra",
+        "apellidos": "López García",
+        "direccion": "Av. Libertador #14-56, Santa Marta",
+        "acudiente": "Ricardo López",
+        "telefonos": {"celular": "3216549870"},
+
+        "estado del estudiante" : {
+        "estado": "Cursando",
+        "riesgo": "Medio"
+        }
+    },
+    {
+        "identificacion": 7,
+        "nombres": "Santiago Javier",
+        "apellidos": "Pérez Molina",
+        "direccion": "Calle 7 #78-90, Bucaramanga",
+        "acudiente": "Rosa Molina",
+        "telefonos": {"celular": "3223456789"},
+
+        "estado del estudiante" : {
+        "estado": "Retirado",
+        "riesgo": "Alto"
+        }
+    },
+    {
+        "identificacion": 8,
+        "nombres": "Valentina Isabel",
+        "apellidos": "García Suárez",
+        "direccion": "Carrera 5 #22-34, Manizales",
+        "acudiente": "José García",
+        "telefonos": {"celular": "3167891234"},
+
+        "estado del estudiante" : {
+        "estado": "Inscrito",
+        "riesgo": "Bajo"
+        }
+    },
+    {
+        "identificacion": 9,
+        "nombres": "Mateo Andrés",
+        "apellidos": "Muñoz Ramírez",
+        "numero" : "3183792380" ,
+        "direccion": "Calle 15 #10-22, Pereira",
+        "acudiente": "Claudia Ramírez",
+        "telefonos": {"celular": "3174561230"},
+        
+        "estado del estudiante" : {
+        "estado": "Expulsado",
+        "riesgo": "Alto"
+        }
+    },
+    {
+        "identificacion": 10,
+        "nombres": "Isabela Fernanda",
+        "apellidos": "Castro Rodríguez",
+        "direccion": "Avenida Norte #45-12, Cúcuta",
+        "acudiente": "Fernando Castro",
+        "telefonos": {"celular": "3196543210"},
+
+        "estado del estudiante" : {
+        "estado": "Aprobado",
+        "riesgo": "Bajo"
+        }
+    }]
+}
+
+
