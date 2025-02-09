@@ -3,9 +3,24 @@
         {
             "Mañana": "1",
             "Tarde": "2",
-            "Jornada Completa": "3"
-        }
-    ],
+            "Jornada Completa": "3" 
+
+
+    
+    }
+],
+
+
+    "Horario: " : [ 
+        {
+        "Mañana" : "6:00 am  a 2:00 pm" ,
+        "Tarde" :  "2:00 pm a 10:00 pm " ,
+        "Jornada Completa" : "6:00 a 10:00"
+
+        }],
+
+    
+
     "trainers": [
         {
             "nombres": "Pedro",
