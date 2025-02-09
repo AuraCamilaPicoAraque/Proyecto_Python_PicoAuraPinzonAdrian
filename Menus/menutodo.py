@@ -15,20 +15,20 @@ def guardarCamperJSON(lool):
 
 
 ##Ver campers en la seccion de coordinador , 
-
+abrir={}
 def Vercam ():
-      abrir = abrirCamperJSON ()
-      for i in range(len(abrir["campers"])):
-            print("camper ~~ ", i+1 , "Id: ", abrir["campers"]["identificacion"])
-            print("Nombres ~ " , abrir [ "campers"]["nombres"])
-            print("Apeliidos ~ " , abrir [ "campers"]["apellidos"])
-            print("dirección ~ " , abrir [ "campers"]["direccion"])
-            print("telefonos ~ " , abrir [ "campers"]["telefonos"])
-            print("acudiente ~ " , abrir [ "campers"]["acudiente"])
-            print("Estado : ~ " , abrir [ "campers"]["estado"])
-            print("riesgo: ~ " , abrir [ "campers"]["riesgo"])
-
-
+    abrir = abrirCamperJSON ()
+    for i in range(len(abrir["campers"])):
+        print("camper ~~ ", i+1 , "Id: ", abrir["campers"][i]["identificacion"])
+        print("Nombres ~ " , abrir [ "campers"][i]["nombres"])
+        print("Apeliidos ~ " , abrir [ "campers"][i]["apellidos"])
+        print("dirección ~ " , abrir [ "campers"][i]["direccion"])
+        print("telefonos ~ " , abrir [ "campers"][i]["telefonos"])
+        print("acudiente ~ " , abrir [ "campers"][i]["acudiente"])
+        print("Estado : ~ " , abrir [ "campers"][i]["estado del estudiante"]["estado"])
+        print("riesgo: ~ " , abrir [ "campers"][i]["estado del estudiante"]["riesgo"])
+        print()
+        print()
 
 ## Para que ingrese u nuevo camper siendo coordinador
 
@@ -151,8 +151,26 @@ def EditarOpcion ():
         abrir["campers"][editar-1]["telefonos"] = tel
 
 
-    elif editar == 4 :
+    elif editar == 5 :
         print("Cual sera el nuevo acudiente ~~")
-        tel = input ("~~: ")
-        abrir["campers"][editar-1]["acudiente"] = tel   
+        acu = input ("~~: ")
+        abrir["campers"][editar-1]["acudiente"] = acu   
+
+
+def NuevoTrainer () :
+      
+        abrir = abrirCamperJSON()
+
+        NuevoTra = abrir ["trainers"]
+        print("Ingrese el nombre del trainer ")
+        nt = input("~~~: ")
+        print("Ingrese la ruta ")
+        rt = input ("~~~ :")
+        print("Ingrese la jornada del nuevo trainer")
+        print ("""Mañana : 1
+Tarde: 2
+Jornada Completa: 3 """)
+        
+
+
 

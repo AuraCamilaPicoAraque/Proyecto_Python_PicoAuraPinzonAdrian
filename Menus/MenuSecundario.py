@@ -27,7 +27,7 @@ def MenuCoordinador():
         print ("#########################################")
         print("##¿Que quieres hacer como Coordinador ? ##")
         print ("##########################################")
-        print("1- Ver grupos")
+        print("1- Ver campers")
         print("2- Ingresar nuevo camper")
         print("3- Ingresar nuevo trainer")
         

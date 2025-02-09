@@ -1,26 +1,18 @@
 {
     "Jornadas: ": [
         {
-            "Mañana": "1",
+            "Manana": "1",
             "Tarde": "2",
-            "Jornada Completa": "3" 
-
-
-    
-    }
-],
-
-
-    "Horario: " : [ 
+            "Jornada Completa": "3"
+        }
+    ],
+    "Horario: ": [
         {
-        "Mañana" : "6:00 am  a 2:00 pm" ,
-        "Tarde" :  "2:00 pm a 10:00 pm " ,
-        "Jornada Completa" : "6:00 a 10:00"
-
-        }],
-
-    
-
+            "Manana": "6:00 am  a 2:00 pm",
+            "Tarde": "2:00 pm a 10:00 pm ",
+            "Jornada Completa": "6:00 a 10:00"
+        }
+    ],
     "trainers": [
         {
             "nombres": "Pedro",
@@ -114,7 +106,7 @@
             "C++",
             "Estructuras de Datos",
             "Algoritmos",
-            "Patrones de Diseño",
+            "Patrones de Diseno",
             "Bases de Datos",
             "QT Framework"
         ],
@@ -130,22 +122,22 @@
             "Terraform",
             "CI/CD",
             "Networking",
-            "Monitorización"
+            "Monitorizacion"
         ]
     },
     "coordinadora": {
         "nombre": "Karen",
         "usuario": "karencitatodapoderosa",
-        "contraseña": "contraseña"
+        "contrasena": "contrasena"
     },
     "campers": [
         {
             "identificacion": 1,
             "nombres": "Juan Carlos",
-            "apellidos": "Gómez Pérez",
-            "direccion": "Calle 45 #23-10, Bogotá",
+            "apellidos": "Gomez Perez",
+            "direccion": "Calle 45 #23-10, Bogota",
             "telefonos": "3001234567",
-            "acudiente": "María Pérez",
+            "acudiente": "Maria Perez",
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
@@ -153,11 +145,11 @@
         },
         {
             "identificacion": 2,
-            "nombres": "Ana Sofía",
-            "apellidos": "Martínez López",
-            "direccion": "Carrera 12 #45-32, Medellín",
+            "nombres": "Ana Sofia",
+            "apellidos": "Martinez Lopez",
+            "direccion": "Carrera 12 #45-32, Medellin",
             "telefonos": "3107654321",
-            "acudiente": "Carlos Martínez",
+            "acudiente": "Carlos Martinez",
             "estado del estudiante": {
                 "estado": "Cursando",
                 "riesgo": "Medio"
@@ -166,7 +158,7 @@
         {
             "identificacion": 3,
             "nombres": "Luis Fernando",
-            "apellidos": "Ramírez Torres",
+            "apellidos": "Ramirez Torres",
             "direccion": "Av. 68 #50-20, Cali",
             "telefonos": "3209987654",
             "acudiente": "Andrea Torres",
@@ -177,11 +169,11 @@
         },
         {
             "identificacion": 4,
-            "nombres": "Gabriela Estefanía",
-            "apellidos": "Rodríguez Vargas",
+            "nombres": "Gabriela Estefania",
+            "apellidos": "Rodriguez Vargas",
             "direccion": "Calle 12 #33-45, Barranquilla",
             "telefonos": "3157890123",
-            "acudiente": "Miguel Rodríguez",
+            "acudiente": "Miguel Rodriguez",
             "estado del estudiante": {
                 "estado": "En proceso de ingreso",
                 "riesgo": "Alto"
@@ -189,8 +181,8 @@
         },
         {
             "identificacion": 5,
-            "nombres": "Daniel Andrés",
-            "apellidos": "Fernández Castro",
+            "nombres": "Daniel Andres",
+            "apellidos": "Fernandez Castro",
             "direccion": "Carrera 8 #90-10, Cartagena",
             "telefonos": "3184567890",
             "acudiente": "Patricia Castro",
@@ -202,10 +194,10 @@
         {
             "identificacion": 6,
             "nombres": "Mariana Alejandra",
-            "apellidos": "López García",
+            "apellidos": "Lopez Garcia",
             "direccion": "Av. Libertador #14-56, Santa Marta",
             "telefonos": "3216549870",
-            "acudiente": "Ricardo López",
+            "acudiente": "Ricardo Lopez",
             "estado del estudiante": {
                 "estado": "Cursando",
                 "riesgo": "Medio"
@@ -214,7 +206,7 @@
         {
             "identificacion": 7,
             "nombres": "Santiago Javier",
-            "apellidos": "Pérez Molina",
+            "apellidos": "Perez Molina",
             "direccion": "Calle 7 #78-90, Bucaramanga",
             "telefonos": "3223456789",
             "acudiente": "Rosa Molina",
@@ -226,10 +218,10 @@
         {
             "identificacion": 8,
             "nombres": "Valentina Isabel",
-            "apellidos": "García Suárez",
+            "apellidos": "Garcia Suarez",
             "direccion": "Carrera 5 #22-34, Manizales",
             "telefonos": "3167891234",
-            "acudiente": "José García",
+            "acudiente": "Jose Garcia",
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
@@ -237,12 +229,12 @@
         },
         {
             "identificacion": 9,
-            "nombres": "Mateo Andrés",
-            "apellidos": "Muñoz Ramírez",
+            "nombres": "Mateo Andres",
+            "apellidos": "Munoz Ramirez",
             "numero": "3183792380",
             "direccion": "Calle 15 #10-22, Pereira",
             "telefonos": "3174561230",
-            "acudiente": "Claudia Ramírez",
+            "acudiente": "Claudia Ramirez",
             "estado del estudiante": {
                 "estado": "Expulsado",
                 "riesgo": "Alto"
@@ -251,8 +243,8 @@
         {
             "identificacion": 10,
             "nombres": "Isabela Fernanda",
-            "apellidos": "Castro Rodríguez",
-            "direccion": "Avenida Norte #45-12, Cúcuta",
+            "apellidos": "Castro Rodriguez",
+            "direccion": "Avenida Norte #45-12, Cucuta",
             "telefonos": "3196543210",
             "acudiente": "Fernando Castro",
             "estado del estudiante": {
@@ -279,6 +271,30 @@
             "direccion": "cr 13 # 60 -17",
             "telefonos": 3178499887,
             "acudiente": "nidya",
+            "estado del estudiante": {
+                "estado": "Inscrito",
+                "riesgo": "Bajo"
+            }
+        },
+        {
+            "identificacion": 13,
+            "nombres": "sofia",
+            "apellidos": "rodriguez",
+            "direccion": "cra 60 13 la trrinidad",
+            "telefonos": 3178499887,
+            "acudiente": "adriana",
+            "estado del estudiante": {
+                "estado": "Inscrito",
+                "riesgo": "Bajo"
+            }
+        },
+        {
+            "identificacion": 14,
+            "nombres": "juan",
+            "apellidos": "umana",
+            "direccion": "calle 11b 1b - 20 ",
+            "telefonos": 3053339629,
+            "acudiente": "fernanda",
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"

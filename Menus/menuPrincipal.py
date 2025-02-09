@@ -1,5 +1,6 @@
 import json
 from MenuSecundario import *
+from menutodo import *
 
 ##  Abrir
 def abrirCamperJSON():
@@ -14,34 +15,70 @@ def guardarCamperJSON(lool):
     with open ("./BaseDatosCampus.json" , "w") as outFile :
        json.dump (lool , outFile, indent=4 , ensure_ascii=False)
 
+
 def MenuDelPrincipio():
     print ("##########################################")
-    print("\n ----- Bienvenidos al CampusLand --------")
+    print("\n ----- Bienvenidos al CampusLand -------- \n")
     print ("##########################################")
     print("¿Quien eres?")
     print("1- Trainer")
     print("2- Campers")
     print("3- Coordinador ")
+    print("4- Salir del sistema")
 
     opcion = input("Seleccione una opción: ")
     
+
+### menu para el trainer
     if opcion == "1":
         MenuTrainer()
+
+
+
+
+### menu para el camper
     elif opcion == "2":
         MenuCamper()
+
+        opcCamper = int(input(" ~~~ :"))
+
+        if opcCamper == 1 :
+            print("a")
+            
+        elif opcCamper == 2 :
+            CamperInscripcion()
+
+
+
+
+## menu para el coordinador
+
     elif opcion == "3":
         MenuCoordinador()
+        opc = int(input(" ~~~ :"))
+
+        if opc == 1 :
+            Vercam ()
+        elif opc == 2 :
+            IngresarCamper()
+        elif opc == 3 :
+            NuevoTrainer ()
+
+
+
+
+
     elif opcion == "4":
         print(" Saliendo del sistema ~~~")
-        bo=False
+        exit ()
     else:
         print(" opción no válida, intente de nuevo.")
-
-abrir = {}
-
+        
 bo=True
 while bo==True:
     MenuDelPrincipio()
+
+
 
 
     
