@@ -1,0 +1,46 @@
+{
+    "NotasCamper": [
+        {
+            "Nombre": "Juan Carlos",
+            "Notas": 30
+        },
+        {
+            "Nombre": "Ana Sofia",
+            "Notas": 50
+        },
+        {
+            "Nombre": "Luis Fernando",
+            "Notas": 20
+        },
+        {
+            "Nombre": "Gabriela Estefania",
+            "Notas": 70
+        },
+        {
+            "Nombre": "Daniel Andres",
+            "Notas": 10
+        },
+        {
+            "Nombre": "Mariana Alejandra",
+            "Notas": 60
+        },
+        {
+            "Nombre": "Santiago Javier",
+            "Notas": 80
+        },
+        {
+            "Nombre": "Valentina Isabel",
+            "Notas": 40
+        },
+        {
+            "Nombre": "Mateo Andres",
+            "Notas": 90
+        },
+        {
+            "Nombre": "Isabela Fernanda",
+            "Notas": 15
+        }
+    ]
+}
+
+     

@@ -15,28 +15,33 @@
     ],
     "trainers": [
         {
+            "ID": 1,
             "nombres": "Pedro",
-            "Ruta": "Java",
+            "Ruta": "",
             "Jornada del trainer: ": "3"
         },
         {
+            "ID": 2,
             "nombres": "Jolver",
-            "Ruta": "Java",
+            "Ruta": "",
             "Jornada del trainer: ": "3"
         },
         {
+            "ID": 3,
             "nombres": "Miguel",
-            "Ruta": "Java",
+            "Ruta": "",
             "Jornada del trainer: ": "3"
         },
         {
+            "ID": 4,
             "nombres": "Juan Carlos",
-            "Ruta": "Java",
+            "Ruta": "",
             "Jornada del trainer: ": "1"
         },
         {
+            "ID": 5,
             "nombres": "Carlos Rueda",
-            "Ruta": "Java",
+            "Ruta": "",
             "Jornada del trainer: ": "2"
         }
     ],
@@ -125,6 +130,7 @@
             "Monitorizacion"
         ]
     },
+    "Grupos": {},
     "coordinadora": {
         "nombre": "Karen",
         "usuario": "karencitatodapoderosa",
@@ -295,6 +301,18 @@
             "direccion": "calle 11b 1b - 20 ",
             "telefonos": 3053339629,
             "acudiente": "fernanda",
+            "estado del estudiante": {
+                "estado": "Inscrito",
+                "riesgo": "Bajo"
+            }
+        },
+        {
+            "identificacion": 15,
+            "nombres": "camilo",
+            "apellidos": "perez",
+            "direccion": "calle 11b 1b - 20",
+            "telefonos": 3178499887,
+            "acudiente": "carlos",
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"

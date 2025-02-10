@@ -1,4 +1,7 @@
 
+
+
+
 def MenuTrainer():
         print ("#####################################")
         print("##¿Que quieres hacer como Trainer ? ###")
@@ -6,6 +9,7 @@ def MenuTrainer():
         print("1- Ver notas de los cursos ")
         print("2- Editar las notas de los cursos ")
         print("3- Ver Campers")
+        print("4- Salir")
     
 def MenuCamper():
         print ("#####################################")
@@ -13,6 +17,7 @@ def MenuCamper():
         print ("#####################################")
         print("1- Si")
         print("2- Aun no ")
+        print("3- Salir")
 
 def MenuCamperInscrito ():
         print ("######################################")
@@ -21,6 +26,7 @@ def MenuCamperInscrito ():
         print("1- Ver curso que estoy")
         print("2- Ver Ruta Asignada")
         print("3- ver registros de notas")
+        print("4- Salir")
        
 
 def MenuCoordinador():
@@ -30,6 +36,7 @@ def MenuCoordinador():
         print("1- Ver campers")
         print("2- Ingresar nuevo camper")
         print("3- Ingresar nuevo trainer")
+        print("4- Salir")
         
 
 

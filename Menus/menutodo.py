@@ -6,12 +6,59 @@ def abrirCamperJSON():
     with open("./BaseDatosCampus.json" , "r") as openFile :
         Abrir = json.load (openFile)
     return Abrir
+def abrirnotasJSON():
+    Abrir = {}
+    with open("./notas.json" , "r") as openFile :
+        Abrir = json.load (openFile)
+    return Abrir
     
 ## Guardar
 
 def guardarCamperJSON(lool):
     with open ("./BaseDatosCampus.json" , "w") as outFile :
         json.dump (lool , outFile, indent=4 , ensure_ascii=False)
+
+#### MENU DE TRAINER
+
+def VerCursoActual(identificacion):
+      abrir = abrirCamperJSON ()
+      for camper in abrir ["campers"]:
+            if camper ["identificacion"] == identificacion :
+                        print(f"curso actual: {camper['ruta_asignada']}")
+                        
+## [F]  hace más sencillo introducir variables y expresiones en las cadenas
+
+#### TRAINERS 
+
+def VerNotas():
+    print("A que estudiante quieres ver las notas: ")
+    nombren=input(": ")
+    nota=abrirnotasJSON
+    for i in range (len(nota["NotasCamper"])):
+          nombree=nota["NotasCamper"][i]["Nombre"]
+          if nombren==nombree:
+                print("Nota:", nota["NotasCamper"][i]["Notas"])
+
+
+
+def EditarNota():
+    print("A cual estudiante le deseas cambiarla nota")
+    Vercam ()
+    EditarNota= input(": ")
+    for i in range(len("NotasCamper")):
+          print("Que nota quieres actualizar?")
+    EditarNota=input(": ")
+    NotasCamper ["Notas"]= EditarNota
+    print("La nota ha sido Actualizada Correctamente!!!")
+    ## nuevo=input()
+    ## nombredicci[indice][posicion][nombre]=nuevo
+    nota=abrirnotasJSON
+    
+
+
+
+
+
 
 
 ##Ver campers en la seccion de coordinador , 
@@ -99,7 +146,7 @@ def CamperInscripcion():
                                                "acudiente": nombreAcu ,
                                              "estado del estudiante": 
                                              {
-                                                "estado" : "Inscrito",
+                                                "estado" : "en proceso de Incripcion",
                                                "riesgo" : "Bajo"
                                                }
                                                })
@@ -155,6 +202,7 @@ def EditarOpcion ():
         print("Cual sera el nuevo acudiente ~~")
         acu = input ("~~: ")
         abrir["campers"][editar-1]["acudiente"] = acu   
+
 
 
 def NuevoTrainer () :
