@@ -4,16 +4,16 @@
 
 def MenuTrainer():
         print ("#####################################")
-        print("##¿Que quieres hacer como Trainer ? ###")
+        print ("########\n MENU TRAINER \n###########")
         print ("#####################################")
         print("1- Ver notas de los cursos ")
         print("2- Editar las notas de los cursos ")
-        print("3- Ver cursos y sus campers")
+        print("3- Ver rutas asignada y sus campers")
         print("4- Salir")
     
 def MenuCamper():
         print ("#####################################")
-        print("#######¿ Ya estas Inscrito ? #########")
+        print ("######¿ Ya estas Inscrito ? #########")
         print ("#####################################")
         print("1- Si")
         print("2- Aun no ")
@@ -21,7 +21,7 @@ def MenuCamper():
 
 def MenuCamperInscrito ():
         print ("######################################")
-        print("## ¿ Que quieres hacer como Camper ? ##")
+        print ("######### \n MENU CAMPERS \n #########")
         print ("######################################")
         print("1- Ver curso que estoy")
         print("2- Ver Ruta Asignada")
@@ -30,13 +30,17 @@ def MenuCamperInscrito ():
        
 
 def MenuCoordinador():
-        print ("#########################################")
-        print("##¿Que quieres hacer como Coordinador ? ##")
         print ("##########################################")
-        print("1- Ver campers")
-        print("2- Ingresar nuevo camper")
-        print("3- Ingresar nuevo trainer")
-        print("4- Salir")
+        print ("##########\n MENU COORDINADOR \n##########")
+        print ("##########################################")
+        print("1- Ver campers // Trainers ")
+        print("2- Agregar nuevo camper // Trainer ")
+        print("3- Editar camper // Trainer ")
+        print("4- Elimminar camper // Trainer ")
+        print("5- Asignar ruta a trainer")
+        print("6- Agregar camper a ruta disponible")
+        print("7- Agregar nueva ruta ")
+        print("8- Salir")
         
 
 

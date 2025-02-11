@@ -18,36 +18,42 @@
             "ID": 1,
             "nombres": "Pedro",
             "Ruta": "",
-            "Jornada del trainer: ": "3"
+            "Jornada del trainer": "3"
         },
         {
             "ID": 2,
             "nombres": "Jolver",
             "Ruta": "",
-            "Jornada del trainer: ": "3"
+            "Jornada del trainer": "3"
         },
         {
             "ID": 3,
             "nombres": "Miguel",
             "Ruta": "",
-            "Jornada del trainer: ": "3"
+            "Jornada del trainer": "3"
         },
         {
             "ID": 4,
             "nombres": "Augusto",
             "Ruta": "",
-            "Jornada del trainer: ": "1"
+            "Jornada del trainer": "1"
         },
         {
             "ID": 5,
             "nombres": "Carlos Rueda",
             "Ruta": "",
-            "Jornada del trainer: ": "2"
+            "Jornada del trainer": "2"
+        },
+        {
+            "ID": 6,
+            "nombres": "dante",
+            "Ruta": "",
+            "Jornada del trainer": "3"
         }
     ],
     "Rutas": {
         "Ruta Java": [
-            "Intro",
+            "-Intro",
             "Python",
             "HTML/CSS",
             "Scrum",
@@ -61,7 +67,7 @@
             "SpringBoot"
         ],
         "Ruta NodeJS": [
-            " Intro",
+            "-Intro",
             " Python",
             " HTML/CSS",
             " Scrum",
@@ -75,7 +81,7 @@
             " Express"
         ],
         "Ruta .NET": [
-            " Intro",
+            "-Intro",
             " Python",
             " HTML/CSS",
             " Scrum",
@@ -89,7 +95,7 @@
             " .Net Core"
         ],
         "Ruta Python": [
-            "Intro",
+            "-Intro",
             "Python",
             "HTML/CSS",
             "Scrum",
@@ -103,7 +109,7 @@
             "FastAPI"
         ],
         "Ruta C++": [
-            "Intro",
+            "-Intro",
             "Python",
             "HTML/CSS",
             "Scrum",
@@ -116,7 +122,7 @@
             "QT Framework"
         ],
         "Ruta DevOps": [
-            "Intro",
+            "-Intro",
             "Python",
             "Git",
             "Scrum",
@@ -130,7 +136,6 @@
             "Monitorizacion"
         ]
     },
-    "Grupos": {},
     "coordinadora": {
         "nombre": "Karen",
         "usuario": "karencitatodapoderosa",
@@ -138,7 +143,7 @@
     },
     "campers": [
         {
-            "identificacion": 1,
+            "identificacion": "1",
             "nombres": "Juan Carlos",
             "apellidos": "Gomez Perez",
             "direccion": "Calle 45 #23-10, Bogota",
@@ -148,11 +153,10 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
+            "jornada": 1
         },
         {
-            "identificacion": 2,
+            "identificacion": "2",
             "nombres": "Ana Sofia",
             "apellidos": "Martinez Lopez",
             "direccion": "Carrera 12 #45-32, Medellin",
@@ -162,12 +166,10 @@
                 "estado": "Cursando",
                 "riesgo": "Medio"
             },
-
-            "jornada" : 2
-
+            "jornada": 2
         },
         {
-            "identificacion": 3,
+            "identificacion": "3",
             "nombres": "Luis Fernando",
             "apellidos": "Ramirez Torres",
             "direccion": "Av. 68 #50-20, Cali",
@@ -177,11 +179,10 @@
                 "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 2
+            "jornada": 2
         },
         {
-            "identificacion": 4,
+            "identificacion": "4",
             "nombres": "Gabriela Estefania",
             "apellidos": "Rodriguez Vargas",
             "direccion": "Calle 12 #33-45, Barranquilla",
@@ -191,12 +192,10 @@
                 "estado": "En proceso de ingreso",
                 "riesgo": "Alto"
             },
-
-            "jornada" : 2
-
+            "jornada": 2
         },
         {
-            "identificacion": 5,
+            "identificacion": "5",
             "nombres": "Daniel Andres",
             "apellidos": "Fernandez Castro",
             "direccion": "Carrera 8 #90-10, Cartagena",
@@ -206,12 +205,10 @@
                 "estado": "Graduado",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 6,
+            "identificacion": "6",
             "nombres": "Mariana Alejandra",
             "apellidos": "Lopez Garcia",
             "direccion": "Av. Libertador #14-56, Santa Marta",
@@ -221,12 +218,10 @@
                 "estado": "Cursando",
                 "riesgo": "Medio"
             },
-
-            "jornada" : 2
-
+            "jornada": 2
         },
         {
-            "identificacion": 7,
+            "identificacion": "7",
             "nombres": "Santiago Javier",
             "apellidos": "Perez Molina",
             "direccion": "Calle 7 #78-90, Bucaramanga",
@@ -236,12 +231,10 @@
                 "estado": "Retirado",
                 "riesgo": "Alto"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 8,
+            "identificacion": "8",
             "nombres": "Valentina Isabel",
             "apellidos": "Garcia Suarez",
             "direccion": "Carrera 5 #22-34, Manizales",
@@ -251,12 +244,10 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 9,
+            "identificacion": "9",
             "nombres": "Mateo Andres",
             "apellidos": "Munoz Ramirez",
             "numero": "3183792380",
@@ -267,12 +258,10 @@
                 "estado": "Expulsado",
                 "riesgo": "Alto"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 10,
+            "identificacion": "10",
             "nombres": "Isabela Fernanda",
             "apellidos": "Castro Rodriguez",
             "direccion": "Avenida Norte #45-12, Cucuta",
@@ -282,12 +271,10 @@
                 "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 2
-
+            "jornada": 2
         },
         {
-            "identificacion": 11,
+            "identificacion": "11",
             "nombres": "CAMI",
             "apellidos": "PIQUITO",
             "direccion": "CALLE 11B 1B - 20 TORRES DE ZAFIRO ",
@@ -297,12 +284,10 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 12,
+            "identificacion": "12",
             "nombres": "pepito",
             "apellidos": "perez",
             "direccion": "cr 13 # 60 -17",
@@ -312,12 +297,10 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 13,
+            "identificacion": "13",
             "nombres": "sofia",
             "apellidos": "rodriguez",
             "direccion": "cra 60 13 la trrinidad",
@@ -326,13 +309,11 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            },   
-
-            "jornada" : 2
-
+            },
+            "jornada": 2
         },
         {
-            "identificacion": 14,
+            "identificacion": "14",
             "nombres": "juan",
             "apellidos": "umana",
             "direccion": "calle 11b 1b - 20 ",
@@ -342,12 +323,10 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 1
-
+            "jornada": 1
         },
         {
-            "identificacion": 15,
+            "identificacion": "15",
             "nombres": "camilo",
             "apellidos": "perez",
             "direccion": "calle 11b 1b - 20",
@@ -357,9 +336,7 @@
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
             },
-
-            "jornada" : 2
-
+            "jornada": 2
         }
     ]
 }

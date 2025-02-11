@@ -2,45 +2,83 @@
     "NotasCamper": [
         {
             "Nombre": "Juan Carlos",
-            "Notas": 30
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Ana Sofia",
-            "Notas": 50
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Luis Fernando",
-            "Notas": 20
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Gabriela Estefania",
-            "Notas": 70
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Daniel Andres",
-            "Notas": 10
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Mariana Alejandra",
-            "Notas": 60
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Santiago Javier",
-            "Notas": 80
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Valentina Isabel",
-            "Notas": 40
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Mateo Andres",
-            "Notas": 90
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         },
         {
             "Nombre": "Isabela Fernanda",
-            "Notas": 15
+            "Notas": {
+                "proyecto": "",
+                "filtro": "",
+                "otros ": ""
+            }
         }
     ]
 }
-
-     
