@@ -34,7 +34,7 @@
         },
         {
             "ID": 4,
-            "nombres": "Juan Carlos",
+            "nombres": "Augusto",
             "Ruta": "",
             "Jornada del trainer: ": "1"
         },
@@ -147,7 +147,9 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
         },
         {
             "identificacion": 2,
@@ -159,7 +161,10 @@
             "estado del estudiante": {
                 "estado": "Cursando",
                 "riesgo": "Medio"
-            }
+            },
+
+            "jornada" : 2
+
         },
         {
             "identificacion": 3,
@@ -171,7 +176,9 @@
             "estado del estudiante": {
                 "estado": "Aprobado",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 2
         },
         {
             "identificacion": 4,
@@ -183,7 +190,10 @@
             "estado del estudiante": {
                 "estado": "En proceso de ingreso",
                 "riesgo": "Alto"
-            }
+            },
+
+            "jornada" : 2
+
         },
         {
             "identificacion": 5,
@@ -195,7 +205,10 @@
             "estado del estudiante": {
                 "estado": "Graduado",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 6,
@@ -207,7 +220,10 @@
             "estado del estudiante": {
                 "estado": "Cursando",
                 "riesgo": "Medio"
-            }
+            },
+
+            "jornada" : 2
+
         },
         {
             "identificacion": 7,
@@ -219,7 +235,10 @@
             "estado del estudiante": {
                 "estado": "Retirado",
                 "riesgo": "Alto"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 8,
@@ -231,7 +250,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 9,
@@ -244,7 +266,10 @@
             "estado del estudiante": {
                 "estado": "Expulsado",
                 "riesgo": "Alto"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 10,
@@ -256,7 +281,10 @@
             "estado del estudiante": {
                 "estado": "Aprobado",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 2
+
         },
         {
             "identificacion": 11,
@@ -268,7 +296,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 12,
@@ -280,7 +311,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 13,
@@ -292,7 +326,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },   
+
+            "jornada" : 2
+
         },
         {
             "identificacion": 14,
@@ -304,7 +341,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 1
+
         },
         {
             "identificacion": 15,
@@ -316,7 +356,10 @@
             "estado del estudiante": {
                 "estado": "Inscrito",
                 "riesgo": "Bajo"
-            }
+            },
+
+            "jornada" : 2
+
         }
     ]
 }

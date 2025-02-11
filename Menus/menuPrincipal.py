@@ -33,14 +33,20 @@ def MenuDelPrincipio():
     if opcion == "1":
         MenuTrainer()
 
-        opcTra = int(input("~~~ : "))
+        opcTr = int(input("~~~ : "))
 
-        if  opcTra== "1":
+        if  opcTr == 1:
             VerNotas()
-            if opcTra== "2":
-                EditarNota()
-                if opcTra== "3":
-                    Vercam ()
+        elif opcTr == 2:
+            EditarNota()
+        elif opcTr == 3 :
+            Vercam ()
+        elif opcTr == 4 :
+            print("")
+            
+            
+        else:
+             print("Opcion no valida")
                     
 
 

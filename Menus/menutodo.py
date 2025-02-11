@@ -18,6 +18,10 @@ def guardarCamperJSON(lool):
     with open ("./BaseDatosCampus.json" , "w") as outFile :
         json.dump (lool , outFile, indent=4 , ensure_ascii=False)
 
+
+
+
+
 #### MENU DE TRAINER
 
 def VerCursoActual(identificacion):
@@ -31,29 +35,36 @@ def VerCursoActual(identificacion):
 #### TRAINERS 
 
 def VerNotas():
-    print("A que estudiante quieres ver las notas: ")
-    nombren=input(": ")
-    nota=abrirnotasJSON
+    nota=abrirnotasJSON ()
+    print("¿A que Camper quiere ver las notas? ")
     for i in range (len(nota["NotasCamper"])):
-          nombree=nota["NotasCamper"][i]["Nombre"]
-          if nombren==nombree:
-                print("Nota:", nota["NotasCamper"][i]["Notas"])
+     print("Campers # ", i + 1, nota["NotasCamper"][i]["Nombre"])
+    num=int(input(": "))
+    print(nota ["NotasCamper"][num-1]["Notas"] )
 
 
 
 def EditarNota():
-    print("A cual estudiante le deseas cambiarla nota")
-    Vercam ()
-    EditarNota= input(": ")
-    for i in range(len("NotasCamper")):
-          print("Que nota quieres actualizar?")
-    EditarNota=input(": ")
-    NotasCamper ["Notas"]= EditarNota
-    print("La nota ha sido Actualizada Correctamente!!!")
-    ## nuevo=input()
-    ## nombredicci[indice][posicion][nombre]=nuevo
-    nota=abrirnotasJSON
+    nota=abrirnotasJSON ()
+    print("A Que Camper Le Quiere Editar La Nota?")
+
+    for i in range (len(nota["NotasCamper"])):
+        print(f"Campers # {i + 1}: {nota['NotasCamper'][i]['Nombre']} - Nota: {nota['NotasCamper'][i]['Notas']}")
+
+
+    Opcion= int(input("Ingresa el numero del Camper Que quiere modificar la nota: "))
     
+    if 0 <= Opcion < len(nota["NotasCamper"]): #Explicacion del metodo: Basicamente dice que si la opcion de la lista de estudiante es menos 0 y lee todos los estudiantes 
+                nuevaNota = int(input("Ingresa una nueva nota: "))
+                nota["NotasCamper"][Opcion]["Notas"] = nuevaNota
+                print(f"La nota de {nota['NotasCamper'][Opcion]['Nombre']}Ha sido actualizada correctamente~~")
+    else:
+                print("La opcion es invalida ~~")
+
+
+    
+def VerCursos():
+    print("")
 
 
 
@@ -66,14 +77,14 @@ abrir={}
 def Vercam ():
     abrir = abrirCamperJSON ()
     for i in range(len(abrir["campers"])):
-        print("camper ~~ ", i+1 , "Id: ", abrir["campers"][i]["identificacion"])
-        print("Nombres ~ " , abrir [ "campers"][i]["nombres"])
-        print("Apeliidos ~ " , abrir [ "campers"][i]["apellidos"])
-        print("dirección ~ " , abrir [ "campers"][i]["direccion"])
-        print("telefonos ~ " , abrir [ "campers"][i]["telefonos"])
-        print("acudiente ~ " , abrir [ "campers"][i]["acudiente"])
-        print("Estado : ~ " , abrir [ "campers"][i]["estado del estudiante"]["estado"])
-        print("riesgo: ~ " , abrir [ "campers"][i]["estado del estudiante"]["riesgo"])
+        print("camper    ~~ ", "Id: ", abrir["campers"][i]["identificacion"])
+        print("Nombres   ~~ " , abrir [ "campers"][i]["nombres"])
+        print("Apeliidos ~~ " , abrir [ "campers"][i]["apellidos"])
+        print("dirección ~~ " , abrir [ "campers"][i]["direccion"])
+        print("telefonos ~~ " , abrir [ "campers"][i]["telefonos"])
+        print("acudiente ~~ " , abrir [ "campers"][i]["acudiente"])
+        print("Estado :  ~~ " , abrir [ "campers"][i]["estado del estudiante"]["estado"])
+        print("riesgo:   ~~ " , abrir [ "campers"][i]["estado del estudiante"]["riesgo"])
         print()
         print()
 

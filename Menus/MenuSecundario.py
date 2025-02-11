@@ -8,7 +8,7 @@ def MenuTrainer():
         print ("#####################################")
         print("1- Ver notas de los cursos ")
         print("2- Editar las notas de los cursos ")
-        print("3- Ver Campers")
+        print("3- Ver cursos y sus campers")
         print("4- Salir")
     
 def MenuCamper():
