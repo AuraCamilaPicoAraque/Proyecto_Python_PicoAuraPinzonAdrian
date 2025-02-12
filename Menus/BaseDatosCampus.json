@@ -1,12 +1,12 @@
 {
-    "Jornadas: ": [
+    "Jornadas": [
         {
             "Manana": "1",
             "Tarde": "2",
             "Jornada Completa": "3"
         }
     ],
-    "Horario: ": [
+    "Horario": [
         {
             "Manana": "6:00 am  a 2:00 pm",
             "Tarde": "2:00 pm a 10:00 pm ",
@@ -200,7 +200,7 @@
             "apellidos": "Fernandez Castro",
             "direccion": "Carrera 8 #90-10, Cartagena",
             "telefonos": "3184567890",
-            "acudiente": "Patricia Castro",
+            "acudiente": "dante",
             "estado del estudiante": {
                 "estado": "Graduado",
                 "riesgo": "Bajo"
@@ -328,7 +328,7 @@
         {
             "identificacion": "15",
             "nombres": "camilo",
-            "apellidos": "perez",
+            "apellidos": "salamanca",
             "direccion": "calle 11b 1b - 20",
             "telefonos": 3178499887,
             "acudiente": "carlos",

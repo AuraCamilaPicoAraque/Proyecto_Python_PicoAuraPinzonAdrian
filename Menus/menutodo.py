@@ -69,7 +69,7 @@ def VerNotas():
 
 
 
-######## OPCION 2 - MENUTRAINER
+######## OPCION 2 - MENUTRAINER -------------------------------------------------------------------------------------------
 
 def EditarNota():
     nota=abrirnotasJSON ()
@@ -110,24 +110,6 @@ def VerRutas():
 
 
 
-##Ver campers en la seccion de coordinador , 
-abrir={}
-def Vercam ():
-    abrir = abrirCamperJSON ()
-    for i in range(len(abrir["campers"])):
-        print("camper    ~~ ", "Id: ", abrir["campers"][i]["identificacion"])
-        print("Nombres   ~~ " , abrir [ "campers"][i]["nombres"])
-        print("Apeliidos ~~ " , abrir [ "campers"][i]["apellidos"])
-        print("dirección ~~ " , abrir [ "campers"][i]["direccion"])
-        print("telefonos ~~ " , abrir [ "campers"][i]["telefonos"])
-        print("acudiente ~~ " , abrir [ "campers"][i]["acudiente"])
-        print("Estado :  ~~ " , abrir [ "campers"][i]["estado del estudiante"]["estado"])
-        print("riesgo:   ~~ " , abrir [ "campers"][i]["estado del estudiante"]["riesgo"])
-        print()
-        print()
-
-    guardarCamperJSON(abrir)
-
 
 ## Para que ingrese un nuevo camper siendo coordinador
 
@@ -166,7 +148,7 @@ def IngresarCamper():
                 
                 guardarCamperJSON(abrir)
 
-
+##########################################################################################################
 
 ## Para cuando desee el camper ingresarse en caso de que no este registrado
 
@@ -219,43 +201,43 @@ def EditarCamper ():
     elije = int(input(" ~~~ : "))
 
     print(" ~~~ Que opcion deseas editar? ~~~")
-    print(" 1- Identidad.. ~~ ")
-    print("2- Nombres.. ~~ ")
-    print("3- Apellidos.. ~~ ")
-    print("4- Direccion.. ~~ ")
-    print("5- Telefono.. ~~ ")
-    print("6- Acudiente.. ~~ ")
+
+    print("1- Nombres.. ~~ ")
+    print("2- Apellidos.. ~~ ")
+    print("3- Direccion.. ~~ ")
+    print("4- Telefono.. ~~ ")
+    print("5- Acudiente.. ~~ ")
 
     editar = int(input("~~~ : "))
 
     if editar == 1 :
         print("Cual sera los nuevos nombres ~~")
         nom = input ("~~: ")
-        abrir["campers"][editar-1]["nombres"] = nom
+        abrir["campers"][elije-1]["nombres"] = nom
 
 
     elif editar == 2 :
         print("Cual sera los nuevos apellidos ~~")
         ape = input ("~~: ")
-        abrir["campers"][editar-1]["apellidos"] = ape
+        abrir["campers"][elije-1]["apellidos"] = ape
            
 
     elif editar == 3 :
         print("Cual sera la nueva dirección ~~")
         dire = input ("~~: ")
-        abrir["campers"][editar-1]["direccion"] = dire
+        abrir["campers"][elije-1]["direccion"] = dire
 
 
     elif editar == 4 :
         print("Cual sera el nuevo telefono ~~")
-        tel = input ("~~: ")
-        abrir["campers"][editar-1]["telefonos"] = tel
+        tel = int(input ("~~: "))
+        abrir["campers"][elije-1]["telefonos"] = tel
 
 
     elif editar == 5 :
         print("Cual sera el nuevo acudiente ~~")
         acu = input ("~~: ")
-        abrir["campers"][editar-1]["acudiente"] = acu   
+        abrir["campers"][elije-1]["acudiente"] = acu   
         
     guardarCamperJSON(abrir)
     
@@ -267,6 +249,52 @@ def EditarCamper ():
 
 def EditarTrainer ():
     abrir = abrirCamperJSON()
+    VerTrainer()
+    print ("¿A que trainer desea editar ? ")
+
+    elijeTr = int(input("~~~ : "))
+    print(" ~~~ Que opcion deseas editar? ~~~")
+
+    print("1- Nombres.. ~~ ")   
+    print("2- Jornada del trainer ")   
+
+    opc = int(input("~~~~ :"))
+
+    if opc == 1 :
+        print (" Cual sera el nuevo nombre del trainer?")
+        nomtrai = input("~~~ :")
+        abrir["trainers"][elijeTr - 1]["nombres"] = nomtrai
+
+    elif opc == 2 :
+        print("Cual jornada de trabajo le quieres cambiar ")
+        print ("""Mañana : 1
+Tarde: 2
+Jornada Completa: 3 """)
+        jorTra = int(input("~~~~ : "))
+        abrir["trainers"][elijeTr - 1]["Jornada del trainer"] = jorTra
+    
+    guardarCamperJSON
+         
+
+         
+
+## coordinador opcion 7
+
+
+ #def agregarRut():
+   # abrir= abrirgruposJSON()
+  #  for i in range (len(abrir["P1","P"])):
+        
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -276,7 +304,7 @@ def EditarTrainer ():
 
 ####################################################################################################
 
-
+## OPCION 2 [COORDINADOR] AGREGAR NUEVO TRAINER 
 
 
 def NuevoTrainer () :
@@ -298,10 +326,14 @@ Jornada Completa: 3 """)
                                      })
         guardarCamperJSON(abrir)
         
+
+
+
               
               
- #       guardarCamperJSON(abrir)
-        
+##################################################################################################
+
+### OPCION 1 [COORDINADOR]  VER TRAINER
 
 def VerTrainer():
       abrir = abrirCamperJSON ()
@@ -316,20 +348,72 @@ def VerTrainer():
 
 
 
+
+##   OPCION 1 [COORDINADOR]  VER CAMPERS  
+abrir={}
+def Vercam ():
+    abrir = abrirCamperJSON ()
+    for i in range(len(abrir["campers"])):
+        print("camper    ~~ ", "Id: ", abrir["campers"][i]["identificacion"])
+        print("Nombres   ~~ " , abrir [ "campers"][i]["nombres"])
+        print("Apeliidos ~~ " , abrir [ "campers"][i]["apellidos"])
+        print("dirección ~~ " , abrir [ "campers"][i]["direccion"])
+        print("telefonos ~~ " , abrir [ "campers"][i]["telefonos"])
+        print("acudiente ~~ " , abrir [ "campers"][i]["acudiente"])
+        print("Estado :  ~~ " , abrir [ "campers"][i]["estado del estudiante"]["estado"])
+        print("riesgo:   ~~ " , abrir [ "campers"][i]["estado del estudiante"]["riesgo"])
+        print()
+        print()
+
+    guardarCamperJSON(abrir)
+
+
+
+
+
+
+##################################################################################
+
+### OPCION DE INICIO DE SESION SIENDO CAMPER --
+
+
 def iniciarSeccion ():
     abrir = abrirCamperJSON ()
 
     numIdent = input("Ingrese su número de identificación para iniciar sesión: ")
     for i in range (len(abrir["campers"])):
             if numIdent==(abrir["campers"][i]["identificacion"]):
-                print(f"\nBienvenido, {abrir['campers'][i]['nombres']} {abrir['campers'][i]['apellidos']}!")
+                print(f"\nBienvenido, {abrir['campers'][i]['nombres']} {abrir['campers'][i]['apellidos']} ~~~~")
                 
                 guardarCamperJSON(abrir)
 
 
+
+
+
+### OPCION DE INICIO DE SESION SIENDO TRAINER --
+
+
+def iniciarSeccionTrainer ():
+    abrir = abrirCamperJSON ()
+
+    numIdenT = input("Ingrese su número de identificación para iniciar sesión: ")
+    for i in range (len(abrir["trainers"])):
+            if numIdenT==(abrir["trainers"][i]["ID"]):
+                print(f"\nBienvenido, {abrir['trainers'][i]['nombres']} {abrir['trainers'][i]['Jornada del trainer']} ~~~")
+                
+                guardarCamperJSON(abrir)
+
+
+
+
+
 #### ELIMINAR CAMPER Y TRAINERS --------------------------------------------------------------------------------
 
-### eso q me ta saliendo error corrije ;-;
+
+#### OPCION 4 [COORDINADOR]  ELIMINAR CAMPER ---
+
+
 
 def EliminarCamper():
     abrir=abrirCamperJSON()
@@ -341,6 +425,10 @@ def EliminarCamper():
             del(abrir["campers"][i])
             guardarCamperJSON(abrir)
 
+
+
+
+#### OPCION 4 [COORDINADOR]  ELIMINAR TRAINER ---
 
 
 def EliminarTrainer():

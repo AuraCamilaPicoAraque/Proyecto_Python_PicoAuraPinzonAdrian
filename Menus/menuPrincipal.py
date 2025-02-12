@@ -30,21 +30,36 @@ def MenuDelPrincipio():
     
 
 ### menu para el trainer : -------------------------------------------------------------------------
+    
+    
     if opcion == "1":
-        MenuTrainer()
 
-## menu de opciones para el trainer
-        opcTr = int(input("~~~ : "))
+        MenuTrainerIniciar()
+        opcTrainer = int(input("~~ :"))
 
-        if  opcTr == 1:
-            VerNotas()
-        elif opcTr == 2:
-            EditarNota()
-        elif opcTr == 3 :
-            VerRutas ()
-        elif opcTr == 4 :
-            print("")
+### OPCION SI ESTA INSCRITO ------------------------------
+
+        if opcTrainer == 1 :
+            iniciarSeccionTrainer ()
+
+            MenuTrainer()
+            opcTr = int(input("~~~ : "))
+
+            if  opcTr == 1:
+                VerNotas()
+            elif opcTr == 2:
+                EditarNota()
+            elif opcTr == 3 :
+                VerRutas ()
+            elif opcTr == 4 :
+                print("")
+
+
+#### OPCION SI NO ESTA INSCRITO -----------------------------
             
+        elif opcTrainer == 2 :
+            NuevoTrainer ()
+        
             
         else:
              print("Opcion no valida")
@@ -66,9 +81,22 @@ def MenuDelPrincipio():
         if opcCamper == 1 :
             iniciarSeccion ()
 
+            MenuCamperInscrito ()
             opcC = int(input("~~ : "))
+
+    ## "1- Ver curso que estoy")
             if opcC == 1 :
                 VerCursoActual ()
+
+    ## 2- Ver Ruta Asignada")
+            elif opcC == 2 :
+                print("a")
+
+    ## 3- ver registros de notas
+            elif opcC == 3 :
+                print (" a ")
+
+
             
 #### OPCION SI NO ESTA INSCRITO -----------------------------
 
@@ -93,6 +121,9 @@ def MenuDelPrincipio():
         ## menu de opciones para el trainer
         opc = int(input(" ~~~ :"))
 
+
+
+#######################################################################################################
 ### OPCION 1 --- VER CAMPERS: Y TRAINER ----------------------------------
 
         if opc == 1 :
@@ -124,7 +155,7 @@ def MenuDelPrincipio():
             if opcE == 1 :
                 EditarCamper ()
             elif opcE == 2 :
-                NuevoTrainer ()
+                EditarTrainer ()
         
 ### OPCION 4 --- ELIMINAR CAMPERS: ----------------------------------
 
