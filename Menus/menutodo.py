@@ -1,4 +1,6 @@
 import json
+import random
+from datetime import datetime
 
 ##  Abrir
 def abrirCamperJSON():
@@ -42,7 +44,7 @@ def guardargruposJSON(lool):
 
 
 
-
+####################################################################################################################################
 #### MENU DE TRAINER -----------------------------------------------------------------------------
 
 def VerCursoActual(identificacion):
@@ -54,7 +56,7 @@ def VerCursoActual(identificacion):
 ## [F]  hace más sencillo introducir variables y expresiones en las cadenas
 
 
-#### TRAINERS 
+#### TRAINERS ----------------------------------------------------------------------------------------------------------------
 
 ######## OPCION 1 - MENUTRAINER
 
@@ -95,7 +97,7 @@ def EditarNota():
 
 
 
-
+######################################################################################################################
 ######## OPCION 3 - MENUTRAINER
     
 def VerRutas():
@@ -187,6 +189,8 @@ def CamperInscripcion():
                 
                 guardarCamperJSON(abrir)
 
+
+
 ############################################################################################################################
 
 ## EDITAR CAMPERS -------------------------------------------------------------------------------
@@ -242,7 +246,7 @@ def EditarCamper ():
     guardarCamperJSON(abrir)
     
 
-    
+############################################################################################################################
 ### EDITAR TRAINERS --------------------------------------------------------------------------------------------------
 
 
@@ -273,31 +277,45 @@ Jornada Completa: 3 """)
         jorTra = int(input("~~~~ : "))
         abrir["trainers"][elijeTr - 1]["Jornada del trainer"] = jorTra
     
-    guardarCamperJSON
+    guardarCamperJSON(abrir)
          
 
          
+####################################################################################################################################
+## coordinador opcion 7 ----------------------------------------------------------------------------------------------------------
 
-## coordinador opcion 7
 
-
- #def agregarRut():
-   # abrir= abrirgruposJSON()
-  #  for i in range (len(abrir["P1","P"])):
+def agregarRuta():
+    abrir= abrirCamperJSON()
+    NuevR= input ("Ingresa el nuevo nombre de la nueva ruta: ")
+    abrir["Rutas"][NuevR]=[]
+    NuevoM1= input("Ingrese el 1 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM1)
+    NuevoM2= input("Ingrese el 2 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM2)
+    NuevoM3=input("Ingrese el 3 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM3)
+    NuevoM4=input("INgrese el 4 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM4)
+    NUevoM5=input("INgrese el 5 Modulo: ")
+    abrir["Rutas"][NuevR].append(NUevoM5)
+    NuevoM6=input("INgrese el 6 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM6)
+    NuevoM7=input("INgrese el 7 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM7)
+    NuevoM8=input("INgrese el 8 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM8)
+    NuevoM9=input("INgrese el 9 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM9)
+    NuevoM10=input("INgrese el 10 Modulo:")
+    abrir["Rutas"][NuevR].append(NuevoM10)
+    NuevoM11=input("INgrese el 11 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM11)
+    NuevoM12=input("INgrese el 12 Modulo: ")
+    abrir["Rutas"][NuevR].append(NuevoM12)
+    print("La nueva ruta ha sido creada exitosamente~~~")
+    guardarCamperJSON(abrir)
         
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -397,10 +415,10 @@ def iniciarSeccion ():
 def iniciarSeccionTrainer ():
     abrir = abrirCamperJSON ()
 
-    numIdenT = input("Ingrese su número de identificación para iniciar sesión: ")
+    numIdenT = int(input("Ingrese su número de identificación para iniciar sesión: "))
     for i in range (len(abrir["trainers"])):
             if numIdenT==(abrir["trainers"][i]["ID"]):
-                print(f"\nBienvenido, {abrir['trainers'][i]['nombres']} {abrir['trainers'][i]['Jornada del trainer']} ~~~")
+                print(f"\nBienvenido, {abrir['trainers'][i]['nombres']} : Jornada del trainer {abrir['trainers'][i]['Jornada del trainer']} ~~~")
                 
                 guardarCamperJSON(abrir)
 
@@ -442,4 +460,91 @@ def EliminarTrainer():
     guardarCamperJSON(abrir)
 
 
-                    
+
+
+
+
+###############################################################################################################################
+
+
+## GRUPOS ASIGNADOS : ---------------------------------------------------------------------------
+
+def GruposRandom():
+    abrir=abrirgruposJSON()
+    gruposJornada  = random.choice(list(abrir.keys()))
+    return gruposJornada
+
+def Grupos():
+    now=datetime.now()
+    abrir = abrirgruposJSON()
+    abrir2 = abrirCamperJSON()
+    fechaInicio = str(now.day) + "/" + str(now.month) + "/" + str(now.year)
+    fechaFinal = str(now.day) + "/" + str(now.month+10) + "/" + str(now.year)
+
+    for i in range (len(abrir)):
+        clave = GruposRandom()
+        abrir[clave][0]["Fecha Inicio"] = fechaInicio
+        abrir[clave][0]["Fecha Finalizacion"] = fechaFinal
+
+    for i in range (len(abrir2["campers"])):
+
+
+        if (abrir2["campers"][i]["jornada"]) == 1 :
+            clave = GruposRandom()
+            while not "1" in clave and len(abrir[clave][0]["Miembro"]) < 33 :
+                clave = GruposRandom()
+            abrir[clave][0]["Miembro"].append(abrir2["campers"][i]["nombres"] + " " + abrir2["campers"][i]["apellidos"])
+            guardargruposJSON (abrir)
+
+
+        if (abrir2["campers"][i]["jornada"]) == 2 :
+            clave = GruposRandom()
+            while not "2" in clave and len(abrir[clave][0]["Miembro"]) < 33 :
+                clave = GruposRandom()
+            abrir[clave][0]["Miembro"].append(abrir2["campers"][i]["nombres"] + " " + abrir2["campers"][i]["apellidos"])
+            guardargruposJSON (abrir)
+    
+        
+
+
+#################################################################################################################################
+
+### OPCION 5 = ASIGNAR RUTA A CAMPER : ----------------------------------------------------------------------------
+
+
+
+"""def RutaCamper ():
+    abrir = abrirgruposJSON()
+    abrir2 = abrirCamperJSON()
+
+    for i in range (len(abrir2["campers"])):
+        if """
+
+
+
+
+
+
+################################################################################################################################
+
+### OPCION NOTAS :  ------------------------
+
+
+def NotasAsig () :
+    abrir = abrirnotasJSON ()
+    nombre=input("ingresa el nombre del camper: ")
+    for i in range (len(abrir["NotasCamper"])):
+        if nombre == (abrir["NotasCamper"][i]["Nombre"]):
+            print(f"Notas de: {abrir["NotasCamper"][i]["Nombre"]}")
+
+            proyecto = int(input("Ingrese la nota del proyecto: ~ "))
+            abrir ["NotasCamper"][i]["Notas"]["proyecto"] = proyecto
+
+            filtro = int(input("Ingrese la nota del filtro: ~ "))
+            abrir ["NotasCamper"][i]["Notas"]["filtro"] = filtro
+
+            otros = int(input("Ingrese la nota de otros: ~ "))
+            abrir ["NotasCamper"][i]["Notas"]["otros"] = otros
+
+            guardarnotasJSON (abrir)
+

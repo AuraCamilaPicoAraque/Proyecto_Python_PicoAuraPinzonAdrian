@@ -3,7 +3,7 @@
     "P1"  : [
         {
         
-        "Jornada" : 0 ,
+        "Jornada" : 1 ,
         "Miembro" : [],
         "Trainer" : "Pedro" ,
         "Ruta" : {} ,
@@ -15,7 +15,7 @@
     "P2"  : [
         {
         
-        "Jornada" : 0 ,
+        "Jornada" : 2 ,
         "Miembro" : [],
         "Trainer" : "Pedro" ,
         "Ruta" : {} ,
@@ -24,39 +24,16 @@
     }],
 
 
-    "P3"  : [
-        {
-    
-        "Jornada" : 0 ,
-        "Miembro" : [],
-        "Trainer" : "Pedro" ,
-        "Ruta" : {} ,
-        "Fecha Inicio" : 0 ,
-        "Fecha Finalizacion" : 0
-}],
-
-
-    "P4"  : [
-        {
-        
-        "Jornada" : 0 ,
-        "Miembro" : [],
-        "Trainer" : "Pedro" ,
-        "Ruta" : {} ,
-        "Fecha Inicio" : 0 ,
-        "Fecha Finalizacion" : 0
-}],    
 
 
 
 
 
 
-
-"J1"  : [
+    "J1"  : [
     {
     
-    "Jornada" : 0 ,
+    "Jornada" : 1 ,
     "Miembro" : [],
     "Trainer" : "Jolver" ,
     "Ruta" : {} ,
@@ -65,34 +42,10 @@
 }],
 
 
-"J2"  : [
+    "J2"  : [
     {
     
-    "Jornada" : 0 ,
-    "Miembro" : [],
-    "Trainer" : "Jolver" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"J3"  : [
-    {
-
-    "Jornada" : 0 ,
-    "Miembro" : [],
-    "Trainer" : "Jolver" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"J4"  : [
-    {
-    
-    "Jornada" : 0 ,
+    "Jornada" : 2 ,
     "Miembro" : [],
     "Trainer" : "Jolver" ,
     "Ruta" : {} ,
@@ -113,8 +66,8 @@
 "M1"  : [
     {
     
-    "Jornada" : 0 ,
-    "Miembre" : [],
+    "Jornada" : 1 ,
+    "Miembro" : [],
     "Trainer" : "Miguel" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
@@ -125,8 +78,8 @@
 "M2"  : [
     {
     
-    "Jornada" : 0 ,
-    "Miembre" : [],
+    "Jornada" : 2 ,
+    "Miembro" : [],
     "Trainer" : "Miguel" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
@@ -134,28 +87,6 @@
 }],
 
 
-"M3"  : [
-    {
-
-    "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Miguel" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"M4"  : [
-    {
-    
-    "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Miguel" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
 
 
 
@@ -171,8 +102,8 @@
     {
     
     "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Pedro" ,
+    "Miembro" : [],
+    "Trainer" : "Augusto" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
     "Fecha Finalizacion" : 0
@@ -183,31 +114,7 @@
     {
     
     "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Augusto" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"A3"  : [
-    {
-
-    "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Augusto" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"A4"  : [
-    {
-    
-    "Jornada" : 0 ,
-    "Miembre" : [],
+    "Miembro" : [],
     "Trainer" : "Augusto" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
@@ -226,7 +133,7 @@
     {
     
     "Jornada" : 0 ,
-    "Miembre" : [],
+    "Miembro" : [],
     "Trainer" : "Carlos Rueda" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
@@ -238,36 +145,12 @@
     {
     
     "Jornada" : 0 ,
-    "Miembre" : [],
+    "Miembro" : [],
     "Trainer" : "Carlos Rueda" ,
     "Ruta" : {} ,
     "Fecha Inicio" : 0 ,
     "Fecha Finalizacion" : 0
-}],
-
-
-"C3"  : [
-    {
-
-    "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Carlos Rueda" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}],
-
-
-"C4"  : [
-    {
-    
-    "Jornada" : 0 ,
-    "Miembre" : [],
-    "Trainer" : "Carlos Rueda" ,
-    "Ruta" : {} ,
-    "Fecha Inicio" : 0 ,
-    "Fecha Finalizacion" : 0
-}]  
+}]
 
 
 

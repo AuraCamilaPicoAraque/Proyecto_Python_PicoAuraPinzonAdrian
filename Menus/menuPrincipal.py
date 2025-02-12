@@ -2,6 +2,7 @@ import json
 from MenuSecundario import *
 from menutodo import *
 
+
 ##  Abrir
 def abrirCamperJSON():
     Abrir = {}
@@ -48,11 +49,11 @@ def MenuDelPrincipio():
             if  opcTr == 1:
                 VerNotas()
             elif opcTr == 2:
-                EditarNota()
+                NotasAsig ()
             elif opcTr == 3 :
-                VerRutas ()
+                EditarNota ()
             elif opcTr == 4 :
-                print("")
+                VerRutas ()
 
 
 #### OPCION SI NO ESTA INSCRITO -----------------------------
@@ -64,6 +65,8 @@ def MenuDelPrincipio():
         else:
              print("Opcion no valida")
                     
+
+
 
 
 
@@ -114,6 +117,8 @@ def MenuDelPrincipio():
 
 
 
+
+
 ## menu para el coordinador: --------------------------------------------------------------------------------------------------------------
 
     elif opcion == "3":
@@ -135,7 +140,7 @@ def MenuDelPrincipio():
             elif opcV == 2 :
                 VerTrainer ()
 
-### OPCION 2 --- AGREGAR CAMPERS Y CAMPER ----------------------------------
+### OPCION 2 --- AGREGAR CAMPERS Y TRAINER ----------------------------------
 
         elif opc == 2 :
             print("1- agregar nuevo Campers")
@@ -144,7 +149,7 @@ def MenuDelPrincipio():
             if opcA == 1 :
                 IngresarCamper()
             elif opcA == 2 :
-                NuevoTrainer ()
+                NuevoTrainer()
 
 ### OPCION 3 --- EDITAR CAMPERS: ----------------------------------
 
@@ -175,16 +180,15 @@ def MenuDelPrincipio():
             print ("ruta")
         
 
-### OPCION 6 --- AGREGAR CAMPERS A RUTA DISPONIBLE : ----------------------------------
+### OPCION 6 --- AGREGAR CAMPERS A GRUPO DISPONIBLE : ----------------------------------
 
         elif opc == 6 :
-            print ("agregar")
-        
+            Grupos ()
 
 ### OPCION 7 --- AGREGAR NUEVA RUTA  : ----------------------------------
 
         elif opc == 7 : 
-            print("ruta nueva")
+            agregarRuta()
         
 
 
@@ -205,6 +209,9 @@ def MenuDelPrincipio():
     elif opcion == "4":
         print(" Saliendo del sistema ~~~")
         exit ()
+
+
+
 
 
 
