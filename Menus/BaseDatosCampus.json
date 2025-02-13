@@ -139,6 +139,20 @@
             "CI/CD",
             "Networking",
             "Monitorizacion"
+        ],
+        "Ruta CSS": [
+            "introduccion",
+            "modulo",
+            "git",
+            "css avazando",
+            "java scrpt",
+            "docker",
+            "scrum",
+            "java",
+            "python",
+            "jask",
+            "asdas",
+            "asda"
         ]
     },
     "coordinadora": {
@@ -159,7 +173,7 @@
                 "riesgo": "Bajo"
             },
             "jornada": 1,
-            "Ruta": ""
+            "Ruta": "Java"
         },
         {
             "identificacion": "2",
@@ -169,7 +183,7 @@
             "telefonos": "3107654321",
             "acudiente": "Carlos Martinez",
             "estado del estudiante": {
-                "estado": "Cursando",
+                "estado": "Reprobado",
                 "riesgo": "Medio"
             },
             "jornada": 2,

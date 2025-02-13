@@ -76,6 +76,7 @@ def iniciarSeccion ():
 ####################################################################################################################################
 ## Para cuando desee el camper ingresarse en caso de que no este registrado
 
+
 def CamperInscripcion(): 
         
                 abrir = abrirCamperJSON()

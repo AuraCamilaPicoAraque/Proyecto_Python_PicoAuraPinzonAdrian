@@ -3,9 +3,9 @@
         {
             "Nombre": "Juan Carlos",
             "Notas": {
-                "proyecto": "",
-                "filtro": "",
-                "otros": ""
+                "proyecto": 70,
+                "filtro": 70,
+                "otros": 70
             }
         },
         {

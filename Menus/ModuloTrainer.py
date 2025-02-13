@@ -59,29 +59,6 @@ def iniciarSeccionTrainer ():
 ####################################################################################################################################
 #### MENU DE TRAINER -----------------------------------------------------------------------------
 
-
-def VerInfoCurso (identificacion) :
-    abrir = abrirCamperJSON ()
-    for Ruta in abrir ["Rutas"]:
-        for camper in abrir ["campers"]:
-            for i in camper["Rutas"]:
-                print(i, ":\n\n", "\n".join(camper["Rutas"][i]))
-                if camper ["identificacion"] == identificacion and Ruta == camper["Ruta"]:
-                    print(f"Rutas del camper :{abrir['Rutas'][Ruta]}")
-
-
-
-def VerCursoActual(identificacion):
-      abrir = abrirCamperJSON ()
-      for camper in abrir ["campers"]:
-            if camper ["identificacion"] == identificacion :
-                        print(f"curso actual: {camper['Ruta']}")
-                        
-## [F]  hace más sencillo introducir variables y expresiones en las cadenas
-
-
-#### TRAINERS ----------------------------------------------------------------------------------------------------------------
-
 ######## OPCION 1 - VER NOTAS DE LOS CURSOS ---------------------------------------------------------------------------------------------------
 
 def VerNotas():
@@ -103,6 +80,7 @@ def NotasPromedio(pro , fil , otro) :
     return notaF
 
 def NotasAsig () :
+    abrir2 = abrirCamperJSON ()
     abrir = abrirnotasJSON ()
     nombre=input("ingresa el nombre del camper: ")
 
@@ -123,13 +101,17 @@ def NotasAsig () :
             abrir ["NotasCamper"][i]["Notas"]["Nota Final"] = notaFinal
 
             if notaFinal >= 60 :
+                abrir2["campers"][i]["estado del estudiante"]["estado"] = "Aprobado"
                 abrir ["NotasCamper"][i]["Notas"]["Riesgo"] = "Bajo"
                 if notaFinal == 60 :
+                    abrir2["campers"][i]["estado del estudiante"]["estado"] = "cursando"
                     abrir ["NotasCamper"][i]["Notas"]["Riesgo"] = "Medio"
             else:
+                abrir2["campers"][i]["estado del estudiante"]["estado"] = "Reprobado"
                 abrir ["NotasCamper"][i]["Notas"]["Riesgo"] = "Alto"
                 print("Ten cuidado camper estas en rendimiento muy alto estudia o recupera las notas :(")
             guardarnotasJSON (abrir)
+            guardarCamperJSON(abrir2)
 
 #### El :. 2f Redondea el número a dos decimales y lo muestra en formato de punto flotante (float).
 

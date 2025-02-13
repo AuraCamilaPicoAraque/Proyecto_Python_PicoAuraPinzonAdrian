@@ -263,13 +263,13 @@ Jornada Completa: 3 """)
 
 def EliminarCamper():
     abrir=abrirCamperJSON()
-    for i in range (len(abrir["Campers"])):
-        print("Campers # ", i + 1, abrir["NotasCamper"][i]["Nombre"])
+    for i in range (len(abrir["campers"])):
+        print("Campers # ", i + 1, abrir["campers"][i]["nombres"])
     eliminarCamper= int(input("¿Que Camper Quieres eliminar?: " ))
     for i in range (len(abrir["campers"])):
         if abrir["campers"][i]["identificacion"]==eliminarCamper:
             del(abrir["campers"][i])
-            guardarCamperJSON(abrir)
+    guardarCamperJSON(abrir)
 
 
 
@@ -281,7 +281,7 @@ def EliminarTrainer():
     abrir=abrirCamperJSON ()
     for i in range (len(abrir["trainers"])):
           print("Trainers #", i+1, abrir["trainers"][i]["nombres"])
-    eliminarTrainer= int(input("Que trainer quieres elminar"))
+    eliminarTrainer= int(input("Que trainer quieres elminar: "))
     for i in range (len(abrir["trainers"])):
         if abrir["trainers"][i]["ID"]==eliminarTrainer:
             del(abrir["trainers"][i])
@@ -320,7 +320,8 @@ def Grupos():
     for i in range (len(abrir2["campers"])):
 
 
-        if (abrir2["campers"][i]["jornada"]) == 1 and ["campers"][i]["estado del estudiante"]["estado"]=="Aprobado":
+        if abrir2["campers"][i]["jornada"] == 1 and abrir2["campers"][i]["estado del estudiante"]["estado"] == "Aprobado":
+
             clave = GruposRandom()
             while not "1" in clave and len(abrir[clave][0]["Miembro"]) < 33 :
                 clave = GruposRandom()
@@ -328,7 +329,8 @@ def Grupos():
             guardargruposJSON (abrir)
 
 
-        if (abrir2["campers"][i]["jornada"]) == 2 and ["campers"][i]["estado del estudiante"]["estado"]=="Aprobado":
+        if abrir2["campers"][i]["jornada"] == 2 and abrir2["campers"][i]["estado del estudiante"]["estado"] == "Aprobado":
+
             clave = GruposRandom()
             while not "2" in clave and len(abrir[clave][0]["Miembro"]) < 33 :
                 clave = GruposRandom()
