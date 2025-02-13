@@ -1,7 +1,8 @@
 import json
 from MenuSecundario import *
-from menutodo import *
-
+from ModuloTrainer import *
+from ModuloCamper import *
+from ModuloCoordinador import *
 
 ##  Abrir
 def abrirCamperJSON():
@@ -19,7 +20,7 @@ def guardarCamperJSON(lool):
 
 def MenuDelPrincipio():
     print ("##########################################")
-    print("\n ----- Bienvenidos al CampusLand -------- \n")
+    print("\n ----- Bienvenidos al CampusLand --------")
     print ("##########################################")
     print("¿Quien eres?")
     print("1- Trainer")
@@ -49,11 +50,13 @@ def MenuDelPrincipio():
             if  opcTr == 1:
                 VerNotas()
             elif opcTr == 2:
-                NotasAsig ()
+                NotasAsig()
             elif opcTr == 3 :
                 EditarNota ()
             elif opcTr == 4 :
                 VerRutas ()
+            elif opcTr == 5 :
+                exit()
 
 
 #### OPCION SI NO ESTA INSCRITO -----------------------------
@@ -61,7 +64,10 @@ def MenuDelPrincipio():
         elif opcTrainer == 2 :
             NuevoTrainer ()
         
+        elif opcTrainer == 3 :
+            exit()
             
+
         else:
              print("Opcion no valida")
                     
@@ -82,22 +88,25 @@ def MenuDelPrincipio():
 
 ### OPCION SI ESTA INSCRITO ------------------------------
         if opcCamper == 1 :
-            iniciarSeccion ()
+            identificacion=iniciarSeccion()
 
             MenuCamperInscrito ()
             opcC = int(input("~~ : "))
 
     ## "1- Ver curso que estoy")
             if opcC == 1 :
-                VerCursoActual ()
+                VerInfoCurso (identificacion)
 
     ## 2- Ver Ruta Asignada")
             elif opcC == 2 :
-                print("a")
+                VerCursoActual(identificacion)
 
     ## 3- ver registros de notas
             elif opcC == 3 :
-                print (" a ")
+                VerNotas(identificacion)
+            
+            elif opcTr == 4 :
+                exit()
 
 
             
@@ -106,10 +115,14 @@ def MenuDelPrincipio():
         elif opcCamper == 2 :
             CamperInscripcion()
         
-#### OPCION 3 -----------------
-
         elif opcCamper == 3 :
-            print("")
+            exit()
+        
+#### OPCION 3 -----------------
+        else:
+            print("Opcion no valida")
+                    
+       
 
 
 
@@ -118,90 +131,99 @@ def MenuDelPrincipio():
 
 
 
-
-## menu para el coordinador: --------------------------------------------------------------------------------------------------------------
+#######################################################################################################################################################
+## MENU PARA EL COORDINADOR: --------------------------------------------------------------------------------------------------------------
 
     elif opcion == "3":
-        MenuCoordinador()
-        ## menu de opciones para el trainer
-        opc = int(input(" ~~~ :"))
+
+        MenuCoordinadorInicio()
+        opcCoord = int(input(" ~~~ :"))
+        
+        if opcCoord == 1 :
+            iniciarSeccionCoordinador ()
+
+
+            MenuCoordinador()
+
+            opc = int(input(" ~~~ :"))
 
 
 
 #######################################################################################################
 ### OPCION 1 --- VER CAMPERS: Y TRAINER ----------------------------------
 
-        if opc == 1 :
-            print("1- Ver Campers")
-            print("2- Ver Trainer")
-            opcV = int(input("~~ :"))
-            if opcV == 1 :
-                Vercam ()
-            elif opcV == 2 :
-                VerTrainer ()
+            if opc == 1 :
+                print("1- Ver Campers")
+                print("2- Ver Trainer")
+                opcV = int(input("~~ :"))
+                if opcV == 1 :
+                    Vercam ()
+                elif opcV == 2 :
+                    VerTrainer ()
 
 ### OPCION 2 --- AGREGAR CAMPERS Y TRAINER ----------------------------------
 
-        elif opc == 2 :
-            print("1- agregar nuevo Campers")
-            print("2- agregar nuevo Trainer")
-            opcA = int(input("~~ :"))
-            if opcA == 1 :
-                IngresarCamper()
-            elif opcA == 2 :
-                NuevoTrainer()
+            elif opc == 2 :
+                print("1- agregar nuevo Campers")
+                print("2- agregar nuevo Trainer")
+                opcA = int(input("~~ :"))
+                if opcA == 1 :
+                    IngresarCamper()
+                elif opcA == 2 :
+                    NuevoTrainer()
 
 ### OPCION 3 --- EDITAR CAMPERS: ----------------------------------
 
-        elif opc == 3 :
-            print("1- Editar Campers")
-            print("2- Editar Trainer")
-            opcE = int(input("~~ :"))
-            if opcE == 1 :
-                EditarCamper ()
-            elif opcE == 2 :
-                EditarTrainer ()
-        
+            elif opc == 3 :
+                print("1- Editar Campers")
+                print("2- Editar Trainer")
+                opcE = int(input("~~ :"))
+                if opcE == 1 :
+                    EditarCamper ()
+                elif opcE == 2 :
+                    EditarTrainer ()
+            
 ### OPCION 4 --- ELIMINAR CAMPERS: ----------------------------------
 
-        elif opc == 4 :
-            print("1- Eliminar Campers")
-            print("2- Eliminar Trainer")
-            opcEl = int(input("~~ :"))
-            if opcEl == 1 :
-                EliminarCamper()
-            elif opcEl == 2 :
-                EliminarTrainer()
-        
+            elif opc == 4 :
+                print("1- Eliminar Campers")
+                print("2- Eliminar Trainer")
+                opcEl = int(input("~~ :"))
+                if opcEl == 1 :
+                    EliminarCamper()
+                elif opcEl == 2 :
+                    EliminarTrainer()
+            
 
 ### OPCION 5 --- ASIGNAR RUTA A CAMPERS: ----------------------------------
 
-        elif opc == 5 :
-            print ("ruta")
-        
+            elif opc == 5 :
+                print ("ruta")
+            
 
 ### OPCION 6 --- AGREGAR CAMPERS A GRUPO DISPONIBLE : ----------------------------------
 
-        elif opc == 6 :
-            Grupos ()
+            elif opc == 6 :
+                Grupos()
 
 ### OPCION 7 --- AGREGAR NUEVA RUTA  : ----------------------------------
 
-        elif opc == 7 : 
-            agregarRuta()
-        
+            elif opc == 7 : 
+                agregarRuta()
+            
 
 
 ### OPCION 8 --- SALIR : ----------------------------------
 
-        elif opc == 8 : 
-            print("Saliendo del programa ~~~ ")
-            r = False
-            return r
+            elif opc == 8 : 
+                print("Saliendo del programa ~~~ ")
+                exit()
 
-            
+    
+#### SALIR DE INICIO DE SECION -----------------------------------------------
 
-
+        if opcCoord == 2 :
+            exit()
 
 
 
@@ -221,6 +243,11 @@ def MenuDelPrincipio():
     else:
         print(" opción no válida, intente de nuevo.")
         
+
+##############################################################################################################################
+
+## Para que el menu se repita hasta que el usuario decida salir del sistema.
+
 bo=True
 while bo==True:
     bo=MenuDelPrincipio()

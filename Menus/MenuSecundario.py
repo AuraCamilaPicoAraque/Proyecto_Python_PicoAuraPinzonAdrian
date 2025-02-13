@@ -11,11 +11,11 @@ def MenuTrainerIniciar():
 
 def MenuTrainer():
         print ("#####################################")
-        print ("########\n MENU TRAINER \n###########")
+        print ("########### MENU TRAINER ############")
         print ("#####################################")
         print("1- Ver notas de los cursos ")
         print("2- Asignar nota a campers")
-        print("3- Editar las notas de los cursos ")
+        print("3- Editar notas")
         print("4- Ver rutas asignada y sus campers")
         print("5- Salir")
 
@@ -30,17 +30,27 @@ def MenuCamper():
 
 def MenuCamperInscrito ():
         print ("######################################")
-        print ("######### \n MENU CAMPERS \n #########")
+        print ("#########  MENU CAMPERS  #############")
         print ("######################################")
-        print("1- Ver curso que estoy")
+        print("1- Ver informacion del curso en el que estoy")
         print("2- Ver Ruta Asignada")
         print("3- ver notas")
         print("4- Salir")
        
 
+
+def MenuCoordinadorInicio():
+        print ("#########################################")
+        print ("#######  BIENVENIDO COORDINADOR  ########")
+        print ("#########################################")
+        print("1- Iniciar Sesion ")
+        print("2- Salir")
+
+
+
 def MenuCoordinador():
         print ("##########################################")
-        print ("##########\n MENU COORDINADOR \n##########")
+        print ("########## MENU COORDINADOR ##############")
         print ("##########################################")
         print("1- Ver campers // Trainers ")
         print("2- Agregar nuevo camper // Trainer ")

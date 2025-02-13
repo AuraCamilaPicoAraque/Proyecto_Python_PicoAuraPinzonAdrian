@@ -57,7 +57,7 @@
         }
     ],
     "Rutas": {
-        "Ruta Java": [
+        "Java": [
             "-Intro",
             "Python",
             "HTML/CSS",
@@ -71,7 +71,7 @@
             "PostgreSQL",
             "SpringBoot"
         ],
-        "Ruta NodeJS": [
+        "NodeJS": [
             "-Intro",
             " Python",
             " HTML/CSS",
@@ -85,7 +85,7 @@
             " MySQL",
             " Express"
         ],
-        "Ruta .NET": [
+        ".NET": [
             "-Intro",
             " Python",
             " HTML/CSS",
@@ -99,7 +99,7 @@
             " PostgreSQL",
             " .Net Core"
         ],
-        "Ruta Python": [
+        "Python": [
             "-Intro",
             "Python",
             "HTML/CSS",
@@ -113,7 +113,7 @@
             "Flask",
             "FastAPI"
         ],
-        "Ruta C++": [
+        "C++": [
             "-Intro",
             "Python",
             "HTML/CSS",
@@ -126,7 +126,7 @@
             "Bases de Datos",
             "QT Framework"
         ],
-        "Ruta DevOps": [
+        " DevOps": [
             "-Intro",
             "Python",
             "Git",
@@ -155,7 +155,7 @@
             "telefonos": "3001234567",
             "acudiente": "Maria Perez",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 1,
@@ -173,7 +173,7 @@
                 "riesgo": "Medio"
             },
             "jornada": 2,
-            "Ruta": ""
+            "Ruta": "Java"
         },
         {
             "identificacion": "3",
@@ -253,7 +253,7 @@
             "telefonos": "3167891234",
             "acudiente": "Jose Garcia",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 1,
@@ -296,7 +296,7 @@
             "telefonos": 3227770682,
             "acudiente": "CARLOS",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 1,
@@ -310,7 +310,7 @@
             "telefonos": 3178499887,
             "acudiente": "nidya",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 1,
@@ -324,7 +324,7 @@
             "telefonos": 3178499887,
             "acudiente": "adriana",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 2,
@@ -338,7 +338,7 @@
             "telefonos": 3053339629,
             "acudiente": "fernanda",
             "estado del estudiante": {
-                "estado": "Inscrito",
+                "estado": "Aprobado",
                 "riesgo": "Bajo"
             },
             "jornada": 1,
