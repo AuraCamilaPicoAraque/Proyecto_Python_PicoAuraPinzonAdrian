@@ -94,8 +94,3 @@ Para poder subir a la nube este repositorio:
 ## Repositorio...
 
 Este repositorio fue hecho y desarrollado por [ AuraCamilaPicoAraque ](https://github.com/AuraCamilaPicoAraque)
-
-
-## Repositorio...
-
-Este repositorio fue hecho y desarrollado por [ AuraCamilaPicoAraque ](https://github.com/AuraCamilaPicoAraque)
